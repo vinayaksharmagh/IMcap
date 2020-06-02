@@ -1,5 +1,5 @@
 # IMcap
-Inspired from the paper "Show Attend and Tell". This project's aim is to train a neural network which can provide descriptive text for a given image.
+Inspired from the paper "Show Attend and Tell". This project's aim was to train a neural network which can provide descriptive text for a given image.
 
 
 ## Overview
