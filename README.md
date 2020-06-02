@@ -48,3 +48,6 @@ Following are some of the results. You can look at some more results in the Eval
 
 
 ![men sitting](results/7.png)
+
+
+![dogs](results/8.png)
