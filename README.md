@@ -47,7 +47,7 @@ Following are some of the results. You can look at some more results in the Eval
 ![old_couple](results/6.png)
 
 
-![men sitting](results/7.png)
+![dogs](results/7.png)
 
 
-![dogs](results/8.png)
+![men sitting](results/8.png)
