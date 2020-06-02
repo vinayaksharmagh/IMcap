@@ -11,10 +11,10 @@ Decoder consists of LSTM along with visual-attention. Visual attention helps LST
 For word embeddings, a custom word2vec model was trained and it was then intersected with Google's pre-trained word2vec model.
 
 Google-colab and google drive combo was used for training the model.
-
 Flickr30 Dataset was used for creating train and test sets.
 
 A number of models were trained (each trained on different no of images). Of these, version 5 model performs the best.
+You can access these models from "models" sub-directory inside "ImageCap" directory
 
 ## Technologies used
 
@@ -25,3 +25,5 @@ InceptionV3, LSTM, visual-attention, Word2Vec
 Tensorflow, Keras, Gensim, Numpy, Pandas, Sklearn, Pickle, Pillow, Matplotlib, ast, os
 
 
+## Results
+TBD in future commits
