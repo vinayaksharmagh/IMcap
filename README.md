@@ -29,22 +29,22 @@ Tensorflow, Keras, Gensim, Numpy, Pandas, Sklearn, Pickle, Pillow, Matplotlib, a
 
 Following are some of the results. You can look at some more results in the Evaluate.ipynb 
 
-![alt text](results/1.png)
+![sunset](results/1.png)
 
 
-![alt text](results/2.png)
+![massan1](results/2.png)
 
 
-![alt text](results/3.png)
+![gully_boy](results/3.png)
 
 
-![alt text](results/4.png)
+![massan2](results/4.png)
 
 
-![alt text](results/5.png)
+![interstellar](results/5.png)
 
 
-![alt text](results/6.png)
+![old_couple](results/6.png)
 
 
-![alt text](results/7.png)
+![men sitting](results/7.png)
