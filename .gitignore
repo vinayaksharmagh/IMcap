@@ -1,3 +1,2 @@
-#ignore captions_pros.csv
-
-ImageCap/captions_pros.csv
+#ignore .csv
+ *.csv
