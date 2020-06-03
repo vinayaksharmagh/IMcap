@@ -1,4 +1,4 @@
-version 1: It had a logical bug and thus was discarded
+version 1: It had a logical bug, thus was discarded
 
 version 2: Trained using 1800 images and corrosponding 5 captions (viz 9000 examples)
 
