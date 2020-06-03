@@ -6,9 +6,9 @@ Inspired from the paper "Show Attend and Tell". This project's aim was to train 
 Architecture basically consists of encoder-decoder Neural Network, where encoder extracts feature from the image and decoder interprets those features to produce sentence.
 
 Encoder consists of a pre-trained Inception-V3 model (minus the last Fully Connected layers) appended by a custom Fully Connected layer.
-Decoder consists of LSTM along with visual-attention. Visual attention helps LSTM in focussing on relevent image features for the prediction of a particular word in word sequence (sentence)
+Decoder consists of LSTM along with visual-attention. Visual attention helps LSTM in focusing on relevant image features for the prediction of a particular word in word sequence (sentence)
 
-For word embeddings, a custom word2vec model was trained and it was then intersected with Google's pre-trained word2vec model.
+For word embedding, a custom word2vec model was trained and it was then intersected with Google's pre-trained word2vec model.
 
 Google-colab and google drive combo was used for training the model.
 Flickr30 Dataset was used for creating train and test sets.
