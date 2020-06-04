@@ -24,6 +24,9 @@ InceptionV3, LSTM, visual-attention, Word2Vec
 
 Tensorflow, Keras, Gensim, Numpy, Pandas, Sklearn, Pickle, Pillow, Matplotlib, ast, os
 
+## Using pretrained models
+In order to use these pretrained models, clone/download this repository. Make sure that you have Tensorflow (>=1.15), Numpy, Matplotlib and Pillow installed on your system. Your system should also have Python 3. Now, unzip the repository and execute the "run.py" file in it with arguments <image_path> (1st argument) and <model_version> (2nd argument). Use model_version==5 to get best results. 
+
 
 ## Results
 
