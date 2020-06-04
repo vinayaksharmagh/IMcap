@@ -27,6 +27,10 @@ Tensorflow, Keras, Gensim, Numpy, Pandas, Sklearn, Pickle, Pillow, Matplotlib, a
 ## Using pretrained models
 In order to use these pretrained models, clone/download this repository. Make sure that you have Tensorflow (>=1.15), Numpy, Matplotlib and Pillow installed on your system. Your system should also have Python 3. Now, unzip the repository and execute the "run.py" file in it with arguments <image_path> (1st argument) and <model_version> (2nd argument). Use model_version==5 to get best results. 
 
+## Training your own model
+In order to train your own model, clone/download this repository. Install all libraries mentioned above. Download content mentioned in /ImageCap/misc/Download links.txt.
+(1) Extract images using Extract.ipynb. (2) Run Image_Features.ipynb to obtain features of the images (3) Run Text_processing_and_embedding.ipynb to perform text preprocessing and word embedding. (4) Run Training.ipynb to train the model. (5) Run Evaluate.ipynb to get results on test images. (Note that, you will need to create some additional empty sub-directories as per paths in code to contain things like Image features, Images etc.) 
+
 
 ## Results
 

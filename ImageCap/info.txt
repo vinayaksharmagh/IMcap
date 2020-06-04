@@ -1,0 +1,1 @@
+captions.csv is the courtesy of https://www.kaggle.com/hsankesara/flickr-image-dataset (where its present with the name results.csv)
