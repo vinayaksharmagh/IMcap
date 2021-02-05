@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import pickle
 from sys import argv
+import os, os.path
+
+tf.enable_eager_execution() 
 
 class ENCODER(tf.keras.Model):
   def __init__(self, embed_dim):
@@ -61,6 +64,14 @@ class DECODER(tf.keras.Model):
 
 
 
+def feat_extract():
+
+  IV3 = tf.keras.applications.InceptionV3(include_top=False,weights='imagenet') 
+
+  x_in = IV3.input 
+  x_out= IV3.layers[-1].output
+
+  return tf.keras.Model(inputs=x_in, outputs=x_out)
 
 def load_image(arg):
     img = tf.io.read_file(arg)
@@ -120,28 +131,28 @@ def plot_attention(image, result, attention_plot):
     plt.show()
 
 
+curr_dir = os.getcwd()
 
 
 
 
 
-
-M = np.load('ImageCap/embedB.npy')
+M = np.load(os.path.join(curr_dir,'ImageCap/embedB.npy'))
 cap_seq = np.load('ImageCap/caption_vec.npy')
 
 word_ind_map=dict()
-with open('ImageCap/word_ind_map.pkl', 'rb') as f:
+with open(os.path.join(curr_dir,'ImageCap/word_ind_map.pkl'), 'rb') as f:
   word_ind_map = pickle.load(f)
 
 ind_word_map=dict()
-with open('ImageCap/ind_word_map.pkl', 'rb') as f:
+with open(os.path.join(curr_dir,'ImageCap/ind_word_map.pkl'), 'rb') as f:
   ind_word_map = pickle.load(f)
 
-IV3_feat = tf.keras.models.load_model('ImageCap/IV3_feat.h5')
-
+IV3_feat = tf.keras.models.load_model(os.path.join(curr_dir,'ImageCap/IV3_feat.h5'))
 
 image_path = argv[1]
 version = argv[2]
+
 
 if int(version)==1 or int(version)>5:
     print('Wrong model version, select a version from 2 to 5')
@@ -150,8 +161,10 @@ else:
     units = 512
     enc = ENCODER(embed_dim)
     dec = DECODER(units, M, 80)
-    enc.load_weights('/ImageCap/models/encoder'+str(version)+'/')
-    dec.load_weights('/ImageCap/models/decoder'+str(version)+'/')
+    enc.load_weights(os.path.join(curr_dir,'ImageCap/models/encoder'+str(version)+'/'))
+    dec.load_weights(os.path.join(curr_dir,'ImageCap/models/decoder'+str(version)+'/'))
+
+
     result, attention_plot = evaluate(image_path)
     bl = True 
     while(bl):

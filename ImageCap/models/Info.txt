@@ -1,9 +1,0 @@
-version 1: It had a logical bug, thus was discarded
-
-version 2: Trained using 1800 images and corrosponding 5 captions (viz 9000 examples)
-
-version 3: Trained using 4000 images and corrosponding 5 captions (viz 20000 examples)
-
-version 4: Trained using 10000 images and corrosponding 5 captions (viz 50000 examples)
-
-version 5: Trained using 20000 images and corrosponding 5 captions (viz 100000 examples)
